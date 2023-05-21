@@ -1,0 +1,104 @@
+.Post_main_div{
+    width: 100vw;
+    height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  overflow-x: hidden;
+  background-color: rgb(229, 229, 229);
+}
+.choose_image{
+    display: flex;
+    flex-direction: column;
+    width: 98%;
+}
+.choose_image input{
+    transform: scale(1.1);
+    color: red;
+  margin-left:110px;
+width: 180px;
+}
+
+.choose_image h2{
+  margin-bottom: 15px;
+}
+.choose_description{
+    margin-top: 30px;
+    width: 98%;
+}
+.choose_description h2{
+    margin-bottom: 20px;
+}
+.choose_description input{
+ width: 80%;
+ height: 30px;
+}
+.submit_post{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 20px;
+}
+.submit_post button{
+width: 150px;
+font-size: 25px;
+height: 36px;
+background-color: rgb(28, 28, 28);
+color: white;
+border-radius: 20px;
+ transition: all 0.1s;
+ display: flex;
+ align-items: center;
+ justify-content:center;
+margin-bottom: 5px;
+}
+.submit_post button:hover{
+  transform: scale(0.8);
+  cursor: pointer;
+}
+.info_bag{
+    border: 2px solid rgb(4, 132, 201);
+    transform: scale(1.1);
+    border-radius: 10px;
+    background-color: rgb(241, 241, 241);
+    box-shadow: 0.5px 0.5px 3px blue;
+    overflow: hidden;
+}
+@media only screen and (min-width:900px){
+  .info_bag{
+    transform: scale(1.4);
+  }
+  .submit_post button{
+    transform: scale(0.9);
+  }
+}
+
+@media only screen and (min-width:500px){
+    .info_bag{
+      transform: scale(1.6);
+    }
+    .submit_post button{
+      transform: scale(0.9);
+    }
+  }
+
+  
+@media only screen and (min-width:1000px){
+    .info_bag{
+      transform: scale(1.3);
+    }
+    .submit_post button{
+      transform: scale(0.9);
+    }
+  }
+  @media only screen and (max-width:300px){
+    .info_bag{
+      transform: scale(0.7);
+    }
+    .submit_post button{
+      transform: scale(0.9);
+    }
+  }

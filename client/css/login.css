@@ -1,0 +1,136 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.login_main_div{
+ width: 100vw;
+ height: 100vh;
+ overflow: hidden;
+ display: flex;
+ flex-direction: column;
+ background-color: rgb(12, 38, 239);
+}
+.facenet_header{
+    color: white;
+    margin: 0 auto;
+    font-size: 40px;
+    font-family: 'Roboto Slab', serif;
+}
+.login_div{
+    position: relative;
+    border: 2px solid rgb(11, 11, 11);
+    background-color: rgb(255, 255, 255);
+margin:auto;
+width: 20rem;
+height: 20rem;
+text-align: center;
+display: flex;
+flex-direction: column;
+border-top: 3px solid rgb(255, 0, 0);
+box-shadow: 2px 2px 5px black;
+}
+.login_div div{
+    margin-top: 30px;
+}
+.login_div button {
+    margin-top: 50px;
+    width:120px;
+    height: 30px;
+    border-radius: 5px;
+    background-color: black;
+    color: white;
+ transition:all 0.2s ease-in-out;
+}
+.login_div button:hover{
+    cursor:pointer;
+}
+#email{
+    height: 35px;
+    width: 80%;
+}
+.login_email{
+  text-align: center;
+}
+#password{
+    width: 80%;
+    height: 35px;
+}
+.login_password{
+    text-align: center;
+}
+
+.login_div_box{
+    margin-top: 500px;
+}
+.signup_message{
+    color: rgb(15, 29, 231);
+    font-size: 15px;
+    position: absolute;
+    width:100%;
+    left: -90px;
+    bottom: 20px;
+}
+.login_err{
+color: rgb(240, 240, 240);
+top:0px;
+position: absolute;
+background-color: rgb(255, 63, 63);
+width: 100%;
+}
+
+@media only screen and (min-width:768px){
+    .facenet_header{
+        font-size:90px ;
+    }
+    .login_div{
+   transform: scale(1.8);
+    }
+}
+@media only screen and (max-width:280px){
+    .facenet_header{
+        font-size:30px ;
+    }
+    .login_div{
+   transform: scale(0.7);
+   margin-left: -20px;
+    }
+}
+@media only screen and (min-width:1024px) and (min-height:600px){
+    .facenet_header{
+        font-size:90px ;
+    }
+    .login_div{
+   transform: scale(1.2);
+    }
+}
+
+@media only screen and (min-width:1200px){
+    .facenet_header{
+        font-size:85px ;
+        position: absolute;
+        bottom:400px;
+   margin-left: 90px;
+   font-family: sans-serif;
+    }
+    .login_div{
+    position: absolute;
+     transform: scale(1.5);
+   margin-left:840px;
+     bottom: 200px;
+    }
+}
+@media only screen and (min-width:1400px){
+    .facenet_header{
+        font-size:85px ;
+        position: absolute;
+        bottom:400px;
+   margin-left: 90px;
+   font-family: sans-serif;
+    }
+    .login_div{
+    position: absolute;
+     transform: scale(1.5);
+   margin-left:900px;
+     bottom: 200px;
+    }
+}
